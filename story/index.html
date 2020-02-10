@@ -1,13 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghibli App</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+    <title>Story Web Page</title>
+    <meta charset="utf-8">
+
+    <!-- CSS -->
+    <style type="text/css">
+        img {
+            max-width:300px;
+            max-height:240px;
+        }
+
+        .my_highlight {
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+		div{
+            max-width:750px;
+        }
+		
+		textarea{
+		height:80px;
+		width:500px;
+		}
+		
+		p{
+		text-align: justify;
+        }
+		
+		.plaintext1{
+		 font-size:14px;
+		 white-space:pre-wrap;
+		 text-align: justify;
+        }
+	
+		.plaintext2{
+		 font-size:14px;
+		 white-space:pre-wrap;
+		 text-align: justify;
+        }
+		
+		.plaintext3{
+		 font-size:14px;
+		 white-space:pre-wrap;
+		 text-align: justify;
+        }
+		
+		.plaintext4{
+		 font-size:14px;
+		 white-space:pre-wrap;
+		 text-align: justify;
+        }
+		
+		
+		table {
+        font-family: arial, sans-serif;
+          border-collapse: collapse;
+          padding: 0 2.5rem 2.5rem;
+          margin: 30px;
+        }
+	  
+	    td, th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+        }
+		
+		blockquote {
+          border: 1px dashed #ccc;
+          background: rgb(243, 240, 240);
+        }
+    </style>
+
 </head>
- <body>
-  <div id="root"></div>
-  <script src="scripts.js"></script>
+
+<body>
+
+    <!-- Instruction -->
+    <h1> Instruction </h1>
+    <ul>
+		  <li>Please read the stories carefully,each story has a different number of characters.</li>
+		  <li>For every character you should input the name and a short description of the character.</li>
+		  <li>The name cannot null and short description of the character has min 30 words .</li>
+		  <li>You can use <span class="my_highlight"> 'Add Character' </span>button to increase character. </li>
+		  <li>After finishing all characters' the description of a story,please submit. </li>
+    </ul>
+
+
+    <!-- Image & Input Text Block -->
+    <form id="story_form" name="story_form">
+        <div id="story1">
+             <h2>Story1 </h2>
+			 <a style="font-size:20px;" href="http://www.scp-wiki.net//laughter">Laughter</a><br>	
+			 <div class="plaintext1">
+            </div>
+			 <button type="button"  onclick="handleNumber(1)">Add Character</button>
+			 <button type="button"  onclick="handleTask(1)">Submit Task</button><br>
+			 <br>
+			 <label>The name of the character_1: </label>
+			 <input type="text" id="name11"/><br>
+			 <label>A short description of the character_1: </label><br>
+			 <textarea  id="description11" required></textarea><br>
+        </div> 
+
+        <div id="story2">
+           <h2>Story2</h2>
+			<a style="font-size:20px;" href="http://www.scp-wiki.net//challenge-accepted">Challenge Accepted!</a><br>
+			<div class="plaintext2">
+			</div>
+			<button type="button"  onclick="handleNumber(2)">Add Character</button>
+			<button type="button"  onclick="handleTask(2)">Submit Task</button><br>
+			<br>
+			<label>The name of the character_1:</label>
+			<input type="text" id="name21"/><br>
+			<label>A short description of the character_1: </label><br>
+			<textarea  id="description21" required></textarea><br>
+            
+        </div>
+
+        <div id="story3">
+            <h2>Story3</h2>
+			<a href="http://www.scp-wiki.net//the-most-dangerous-game-of-all">The Most Dangerous Game of All</a><br>
+			<div class="plaintext3">
+            </div>
+			<button type="button"  onclick="handleNumber(3)">Add Character</button>
+			<button type="button"  onclick="handleTask(3)">Submit Task</button><br>
+			<br>
+			<label>The name of the character_1:</label>
+			<input type="text" id="name31"/><br>
+			<label>A short description of the character_1: </label><br>
+			<textarea  id="description31" required></textarea><br>
+			
+        </div>
+
+        <div id="story4">
+            <h2>Story4 </h2>
+			<a href="http://www.scp-wiki.net//i-wanna-be-the-very-best">SCPokemon</a><br>
+            <div class="plaintext4">
+            </div>
+			<button type="button"  onclick="handleNumber(4)">Add Character</button>
+			<button type="button"  onclick="handleTask(4)">Submit Task</button><br>
+			<br>
+			<label>The name of the character_1:</label>
+			<input type="text" id="name41"/><br>
+			<label>A short description of the character_1: </label><br>
+			<textarea  id="description41" required></textarea><br>
+        </div>
+
+    </form>
+
+ <script src="story.js"></script>
 </body>
+
 </html>
