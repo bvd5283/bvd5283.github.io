@@ -4,12 +4,16 @@
 <head>
     <title>Story Web Page</title>
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <!-- CSS -->
     <style type="text/css">
         img {
             max-width:300px;
             max-height:240px;
+        }
+		html {
+        background-color: grey;
         }
 
         .my_highlight {
@@ -19,7 +23,15 @@
         }
 		div{
             max-width:750px;
-        }
+		}
+		
+		body{
+		  margin: 0 auto;
+		  width: 800px;
+          padding: 0 20px 20px 20px;
+          background-color: white;
+          border: 2px solid black;
+		}
 		
 		textarea{
 		height:80px;
@@ -29,6 +41,16 @@
 		p{
 		text-align: justify;
         }
+		
+		#story_block1,#story_block2,#story_block3,#story_block4{
+            white-space: pre-line;
+            max-height: 500px;
+            overflow-y: scroll;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+		
+		
 		
 		.plaintext1{
 		 font-size:14px;
@@ -77,7 +99,10 @@
 </head>
 
 <body>
-
+    <a href="#story1" style="font-size:30px;">Story1</a>
+    <a href="#story2" style="font-size:30px;">Story2</a>
+	<a href="#story3" style="font-size:30px;">Story3</a>
+	<a href="#story4" style="font-size:30px;">Story4</a>
     <!-- Instruction -->
     <h1> Instruction </h1>
     <ul>
@@ -93,9 +118,9 @@
     <form id="story_form" name="story_form">
         <div id="story1">
              <h2>Story1 </h2>
-			 <a style="font-size:20px;" href="http://www.scp-wiki.net//laughter">Laughter</a><br>	
-			 <div class="plaintext1">
-            </div>
+			 <a style="font-size:20px;" href="http://www.scp-wiki.net//laughter">Laughter</a><br>
+             <pre id="story_block1">			 
+			 </pre>
 			 <button type="button"  onclick="handleNumber(1)">Add Character</button>
 			 <button type="button"  onclick="handleTask(1)">Submit Task</button><br>
 			 <br>
@@ -108,8 +133,8 @@
         <div id="story2">
            <h2>Story2</h2>
 			<a style="font-size:20px;" href="http://www.scp-wiki.net//challenge-accepted">Challenge Accepted!</a><br>
-			<div class="plaintext2">
-			</div>
+			<pre id="story_block2">			 
+			 </pre>
 			<button type="button"  onclick="handleNumber(2)">Add Character</button>
 			<button type="button"  onclick="handleTask(2)">Submit Task</button><br>
 			<br>
@@ -123,8 +148,8 @@
         <div id="story3">
             <h2>Story3</h2>
 			<a href="http://www.scp-wiki.net//the-most-dangerous-game-of-all">The Most Dangerous Game of All</a><br>
-			<div class="plaintext3">
-            </div>
+			<pre id="story_block3">			 
+			 </pre>
 			<button type="button"  onclick="handleNumber(3)">Add Character</button>
 			<button type="button"  onclick="handleTask(3)">Submit Task</button><br>
 			<br>
@@ -138,8 +163,8 @@
         <div id="story4">
             <h2>Story4 </h2>
 			<a href="http://www.scp-wiki.net//i-wanna-be-the-very-best">SCPokemon</a><br>
-            <div class="plaintext4">
-            </div>
+            <pre id="story_block4">			 
+			 </pre>
 			<button type="button"  onclick="handleNumber(4)">Add Character</button>
 			<button type="button"  onclick="handleTask(4)">Submit Task</button><br>
 			<br>
