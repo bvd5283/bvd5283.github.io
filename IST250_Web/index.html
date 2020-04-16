@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Personnal Page for Bingnan Dong</title>
+<link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+<style>
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Georgia, sans-serif; 
+  font-size: 100%;
+  background-color: white;
+  margin: 0;
+}
+
+#layout {
+  margin-left: 6%;
+  margin-right:6%;
+  display: grid;
+  grid-template-rows: 4em 20px [main-start] 50px  auto 50px [main-end]  20px 5em ;
+  grid-template-columns: [main-start] 1fr [main-end] 20px 490px 60px 
+}
+
+#figureA {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+header {
+  font-family: verdana,serif ;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  color: yellow;
+  text-align: center;
+  background-color: blue;
+  display:flex;
+}
+
+footer {
+ background-color: blue;
+ }
+
+main {
+  font-family: "Times New Roman", Times, sans-serif;
+  background-color: white;
+  line-height: 1.6em;
+  color: #666;
+  padding: 1em;
+  border: 1px dotted;
+  border-radius: 20px;
+  grid-row: main-start / main-end;
+  grid-column: main-start / main-end;
+ 
+}
+
+figure {
+  margin: 0;
+  padding: 0;  
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: .8em;
+  padding: .5em;
+  grid-row: 7 / 8;
+  grid-column: 1 / -1;
+}
+
+h3{
+margin-left:10%;
+}
+
+</style>
+</head>
+
+<body>
+<div id="layout">
+
+<header>
+<img src="images/personalbanner.jpg">
+<H3>Bingnan Dong:  IST Design and Development Option</h3>
+</header>
+ 
+<main >
+  <h2>EDUCATION</h2>
+  
+  <p> The Pennsylvania State University, University Park</p>
+  <a href="https://ist.psu.edu">
+  <p>Bachelor of Science in Information Sciences and Technology: Design and Development Option</p>
+  </a>
+  
+  <h2>PROJECT EXPERIENCE</h2>
+  <p>Lead a team to design and develop CareerHelp App that allows graduate students to assign a mock interview, find jobs, and resume review with the faculty members of Career Help Office.</p> 
+  <p>Lead a team to design, build, test, and deploy Java application called AlphaCare. Through AlphaCare, patients can see and manage their own medical records. Medical personnel can manage the medical records of their patients, be alerted of patients with warning signs of chronic illness or missing immunization.</p> 
+  <p>Collaborated with team to design, develop, and implement online system that provides students with reviews and the popular evaluations of all kinds of TV or online shows using HTML, PHP, and SQL Server. Collaborated with team to design and develop an Web Application that provides travelling information about Russian using Node.js, JavaScript, HTML, CSS and SQLite.</p>
+  <table border="1">
+  <tr>
+    <th>Promgramming Skills</th>
+    
+  </tr>
+  <tr>
+    <td>Java</td>
+    
+  </tr>
+  <tr>
+    <td>SQLite</td>
+    
+  </tr>
+  <tr>
+    <td>C++</td>
+   
+  </tr>
+  <tr>
+    <td>C#</td>
+    
+  </tr>
+  <tr>
+    <td>HTML</td>
+    
+  </tr>
+  <tr>
+    <td>Unity Engine</td>
+    
+  </tr>
+</table>
+  
+</main>
+
+<figure id="figureA"><img src="images/joker.jpg"></figure>
+
+<footer>
+ <p id ="p1"></p>
+ <p id = "p2"></p>
+ <script>
+
+var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById("p1").innerHTML = "All content copyright &copy;" + today.getFullYear()+ ",Bingnan Dong.";
+document.getElementById("p2").innerHTML = date;
+ 
+</script>
+</footer>
+
+</div>
+</body>
+</html>
+
+
