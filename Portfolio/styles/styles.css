@@ -159,14 +159,14 @@ th, td {
                                           
 #story_block1,#story_block2,#story_block3 {
             white-space: pre-line;
-            max-height: 250px;
+            max-height: 300px;
             overflow-y: scroll;
             border: 1px solid rgba(0, 0, 0, 0.2);
             padding: 10px;
 }
 #story_block5 {
             white-space: pre-line;
-            max-height: 250px;
+            max-height: 300px;
             overflow-y: scroll;
             border: 1px solid rgba(0, 0, 0, 0.2);
             padding: 10px;
