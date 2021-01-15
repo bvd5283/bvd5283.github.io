@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personnal Page for Bingnan Dong -Coexistence</title>
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+  <!-- import css -->
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+
+<body>
+  <!-- set ID for grid layout -->
+  <div id="layout">
+  
+    <!-- Wecome display -->
+    <header>
+      <img src="images/personalbanner.jpg" alt=" e-portfolio JPG" title="Personal banner of e-profile">
+      <H2  style="margin-left:6%;">Welcome to Bingnan Dong's Online Site</h2>
+    </header>
+    
+	<!-- Navbar -->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Game Design</a></li>
+		<li><a href="code.html">Coding</a></li>
+        <li><a href="art.html">Art Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>  
+    <!-- end navbar -->
+	
+	<!-- start main content -->
+    <main>
+      <h1>ChatBot</h1>
+       <label style="font-size:24px; color:blue;"><b>Task</b></label>
+        <p>Tang poetry has become the treasure of Chinese traditional literature. So I want to make a chatbot to introduce famous Tang poetry and poets to foreign friends who want to understand Chinese traditional culture. Tang Dynasty is a golden age for the development of Chinese poetry. There are a huge number of Tang poetry and many outstanding poets were born. I have defined 3 user intents for my chatbot.
+		</p> 
+		<p><b>Famous Poetry:</b>introduce the 50 most famous Tang poems.<br>
+		<b>Famous Poet:</b>Introduce five most famous poets and their representative works.<br>
+		<b>Season Poetry:</b> appreciate the beauty of the four seasons in Tang poetry.</p>
+		<br>
+		<label style="font-size:24px;color:blue;"><b>Design</b></label>
+        <p>This is a task-oriented text-based chatbot, I use a very popular structure which is decomposed into three major Components: Language Understanding, Dialogue Management, Response Generation. Scope the components clearly, so I can focus on each components task.
+	    </p>
+		<img src="images/chatdesign.jpg" alt="chatdesign JPG" title=" ChatBot Design "/>
+		<p><b>Language Understanding:</b>Count keywords to identify user intent, required information and optional information. Extract needed information from the user message and put the extracted information to the Hash Table.
+	    </p>
+		<p><b>Dialogue Management:</b>Based on value extracted from the hash table to decide what should I ask for the missing information or what should I answer.
+		</p>
+		<p>
+		<b>Response Generation:</b>Based on conversational action returned from dialogue manager to produce the valid responses in this situation.
+		</p>
+		
+		<label style="font-size:24px;color:blue;"><b>Source Code</b></label>
+		<p>This is Java application relying on NetBeans IDE. Download <a href="ChatBot.zip" download="ChatBot.zip"> the Source Code</a> for the detailed information.
+	    </P>
+	</main>
+    <!-- end main content -->
+	
+    <figure id="figureA">
+      <img src="images/Art7.jpg" alt="Articles JPG" title=" Article theme">
+     </figure>
+  
+    <h1 id="article">My coding</h1>
+    
+	<!-- Dispay article list -->
+    <table id="tarticle">
+      <tbody>
+	    <tr>
+          <td><a href="chatbot.html">ChatBot</td>
+        </tr>
+        <tr>
+          <td><a href="coexistence.html">Coexistence for Humans and AI</td>
+        </tr>
+        <tr>
+          <td><a href="Machu.html" >Machu Picchu</td>
+        </tr>
+        <tr>
+          <td><a href="COVID-19.html" >COVID-19: When is the Peak?</td>
+        </tr>
+	  </tbody>  
+    </table>
+     
+	<!-- copyright notice -->
+    <footer>
+      <p>All content copyright &copy; 2021, Bingnan Dong.</p>
+      <p> <i>Page last modified: Sunday, 10-January-2021 16:50 EST</i></p>
+     </footer>
+
+  </div>
+</body>
+</html>
+
+
