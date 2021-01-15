@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio for Bingnan Dong -ChatBot</title>
+  <title>Portfolio for Bingnan Dong -AlphaCare</title>
   <!-- import google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
   <!-- import css -->
@@ -33,28 +33,22 @@
 	
 	<!-- start main content -->
     <main>
-      <h1>ChatBot</h1>
+      <h1>AlphaCare</h1>
        <label style="font-size:24px; color:blue;"><b>Task</b></label>
-        <p>Tang poetry has become the treasure of Chinese traditional literature. So I want to make a chatbot to introduce famous Tang poetry and poets to foreign friends who want to understand Chinese traditional culture. Tang Dynasty is a golden age for the development of Chinese poetry. There are a huge number of Tang poetry and many outstanding poets were born. I have defined 3 user intents for my chatbot.
+        <p> ATZ Healthcare provides services in the healthcare domain. The company wants to develop a role-based health care application called AlphaCare. Through AlphaCare, patients can see and manage their own medical records.  Medical personnel can manage the medical records of their patients including those provided by other medical personnel, be alerted of patients with warning signs of chronic illness or missing immunizations, and perform bio-surveillance such as epidemic detection.
 		</p> 
-		<p><b>Famous Poetry:</b>introduce the 50 most famous Tang poems.<br>
-		<b>Famous Poet:</b>Introduce five most famous poets and their representative works.<br>
-		<b>Season Poetry:</b> appreciate the beauty of the four seasons in Tang poetry.</p>
+		
 		<br>
 		<label style="font-size:24px;color:blue;"><b>Design</b></label>
-        <p>This is a task-oriented text-based chatbot, I use a very popular structure which is decomposed into three major Components: Language Understanding, Dialogue Management, Response Generation. Scope the components clearly, so I can focus on each components task.
-	    </p>
-		<img src="images/chatdesign.jpg" alt="chatdesign JPG" title=" ChatBot Design "/>
-		<p><b>Language Understanding:</b>Count keywords to identify user intent, required information and optional information. Extract needed information from the user message and put the extracted information to the Hash Table.
-	    </p>
-		<p><b>Dialogue Management:</b>Based on value extracted from the hash table to decide what should I ask for the missing information or what should I answer.
+        <p><b>User interface:</b>The user interface should be designed to be both simple and user-friendly. We chose JavaFX FXML, which is an XML-based language that provides the structure for building a user interface separate from the application logic of your code, thereby making the code easier to maintain.It also improves programming efficiency.
 		</p>
-		<p>
-		<b>Response Generation:</b>Based on conversational action returned from dialogue manager to produce the valid responses in this situation.
+		<p><b>Uesr Case::</b>Login, Create Account, Create Appointment, Update Appointment, Appointment History, Export Appointment,Make Prescription, Patient Prescription.
+	    </p>
+		<img src="images/alphacare.jpg" alt="alphacare JPG" title=" Alphacare Design "/>
+		<p><b>Data Persistence:</b>Sqlite Database
 		</p>
-		
 		<label style="font-size:24px;color:blue;"><b>Source Code</b></label>
-		<p>This is Java application relying on NetBeans IDE. Download <a href="ChatBot.zip" download="ChatBot.zip"> the Source Code</a> for the detailed information.
+		<p>This is Java application relying on NetBeans IDE. Download <a href="AlphaCare.zip" download="AlphaCare.zip"> the Source Code</a> for the detailed information.
 	    </P>
 	</main>
     <!-- end main content -->
