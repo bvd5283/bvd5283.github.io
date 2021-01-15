@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personnal Page for Bingnan Dong - Feedback</title>
+  <!-- import google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+  <!-- import css -->
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+
+ <body>
+  <!-- set ID for grid layout -->
+  <div id="layout">
+  
+    <!-- Wecome display -->
+    <header>
+     <img src="images/personalbanner.jpg" alt=" e-portfolio JPG" title="Personal banner of e-profile">
+     <H2 style="margin-left:6%;">Welcome to Bingnan Dong's Online Site</h2>
+    </header>
+  
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Game Design</a></li>
+		<li><a href="code.html">Coding</a></li>
+        <li><a href="art.html">Art Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>  
+    <!-- end navbar -->
+  
+    <!-- rerurn input data accoding to name-->
+    <script>
+      function readParams(formName) { 
+      var queryString = window.location.search; // going to equal whatever is in the url address bar
+      var urlParams = new URLSearchParams(queryString); // gives you an array ['firstname', 'lastname', 'email','msg']
+      return urlParams.get(formName);
+    }
+    </script>
+  
+    <!-- start main content -->
+    <main >
+      <img src="images/Thank.jpg" alt="Thank jpg" title="Thank you">    
+	  <h1 id = "name">
+	  <script>
+         var cn = document.getElementById('name');
+         cn.innerHTML = "Thanks for your feedback! " + readParams('firstname') + " "+ readParams('lastname');
+      </script>
+	  </h1>
+      <p>I will reply to your message soon.</p>
+       
+      <h2>Email Address</h2>
+      <p id="email">
+      <script>
+         var cn = document.getElementById('email');
+         cn.innerHTML = readParams('email');
+      </script>
+      </p>
+	 
+	  <h2>Message</h2>
+      <p id="msg" >
+      <script>
+         var cn = document.getElementById('msg');
+		 cn.innerHTML = readParams('msg');
+      </script>
+      </p>
+    </main>
+    <!-- end main content -->
+
+    <figure id="figureA">
+      <img src="images/Art7.jpg" alt="Articles JPG" title=" Article theme">
+    </figure>
+
+    <h1 id="article">My Articles</h1>
+    <!-- Dispay article list -->
+    <table id="tarticle">
+      <tbody>
+	    <tr>
+          <td><a href="vision.html">Computer Vision</td>
+        </tr>
+        <tr>
+          <td><a href="coexistence.html">Coexistence for Humans and AI</td>
+        </tr>
+        <tr>
+          <td><a href="Machu.html" >Machu Picchu</td>
+        </tr>
+        <tr>
+          <td><a href="COVID-19.html" >COVID-19: When is the Peak?</td>
+        </tr>
+	  </tbody>   
+    </table>
+	
+  <!-- copyright notice -->
+  <footer>
+    <p>All content copyright &copy; 2020, Bingnan Dong.</p>
+    <p> <i>Page last modified: Sunday, 10-January-2021 16:50 EST</i></p>
+   </footer>
+
+</div>
+</body>
+</html>
+
+
