@@ -33,28 +33,33 @@
 	
 	<!-- start main content -->
     <main>
-      <h1>ChatBot</h1>
+      <h1>Skateboard</h1>
        <label style="font-size:24px; color:blue;"><b>Task</b></label>
-        <p>Tang poetry has become the treasure of Chinese traditional literature. So I want to make a chatbot to introduce famous Tang poetry and poets to foreign friends who want to understand Chinese traditional culture. Tang Dynasty is a golden age for the development of Chinese poetry. There are a huge number of Tang poetry and many outstanding poets were born. I have defined 3 user intents for my chatbot.
-		</p> 
-		<p><b>Famous Poetry:</b>introduce the 50 most famous Tang poems.<br>
-		<b>Famous Poet:</b>Introduce five most famous poets and their representative works.<br>
-		<b>Season Poetry:</b> appreciate the beauty of the four seasons in Tang poetry.</p>
+        <p>Creating web service and web application that will allow people to rent and share powered skateboards in State College! We may assume that each user in the system can only have one reservation at a time. The application can perform the following tasks:
+       </p> 
+	   <ul>
+         <li>Add a username to the system. </li>
+         <li>Retrieve the reservation info.</li>
+         <li>Get a list of reservations for all users.</li>
+		 <li>reate a reservation for a given user. It should specify username, start date, start time, and number of hours. </li>
+         <li>Update a reservation for a given user. It should specify username, start date, start time, and number of hours.</li>
+         <li>Delete a reservation for a given user.</li>
+       </ul>
 		<br>
 		<label style="font-size:24px;color:blue;"><b>Design</b></label>
-        <p>This is a task-oriented text-based chatbot, I use a very popular structure which is decomposed into three major Components: Language Understanding, Dialogue Management, Response Generation. Scope the components clearly, so I can focus on each components task.
-	    </p>
-		<img src="images/chatdesign.jpg" alt="chatdesign JPG" title=" ChatBot Design "/>
-		<p><b>Language Understanding:</b>Count keywords to identify user intent, required information and optional information. Extract needed information from the user message and put the extracted information to the Hash Table.
-	    </p>
-		<p><b>Dialogue Management:</b>Based on value extracted from the hash table to decide what should I ask for the missing information or what should I answer.
-		</p>
-		<p>
-		<b>Response Generation:</b>Based on conversational action returned from dialogue manager to produce the valid responses in this situation.
-		</p>
+        <p>RESTful web services are built to work best on the Web. We design API by creating a list of RESTful URLs. Implement RESTful API using Node.js and Express.js.
+	   </p>
+		<ul>
+         <li>Store data on the server in a JSON file. </li>
+		 <li>The server should return the data in JSON format.</li>
+		 <li>The client should extract the data from the JSON response.</li>
+         <li>Create a web-based client to access API using HTML and JavaScript.</li>
+         <li>List of reservations should be displayed in chronological order.</li>
+		 <li>App should require “fs” ,“express” and "cors" on the server.</li>
+       </ul>
 		
 		<label style="font-size:24px;color:blue;"><b>Source Code</b></label>
-		<p>This is a Java application running on NetBeans IDE. Download <a href="ChatBot.zip" download="ChatBot.zip"> the Source Code</a> for the detailed information.
+		<p>This is a Javascript and HTML application relying on Node.js. Download <a href="skateboard.zip" download="skateboard.zip"> the Source Code</a> for the detailed information.
 	    </P>
 	</main>
     <!-- end main content -->
