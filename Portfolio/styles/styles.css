@@ -163,9 +163,9 @@ th, td {
             border: 1px solid rgba(0, 0, 0, 0.2);
             padding: 10px;
 }
-#story_block5 {
+#game_block1,#game_block2,#game_block3 {
             white-space: pre-line;
-            max-height: 300px;
+            max-height: 500px;
             overflow-y: scroll;
             border: 1px solid rgba(0, 0, 0, 0.2);
             padding: 10px;
