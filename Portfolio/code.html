@@ -37,13 +37,13 @@
 	  <!-- set ID for css style -->
       <pre id="story_block1">
 	     <label style="font-size:24px;"><b>Task</b></label>
-         Tang poetry has become the treasure of Chinese traditional literature. So I want to make a chatbot to introduce famous Tang poetry and poets to foreign friends who want to understand Chinese traditional culture. Tang Dynasty is a golden age for the development of Chinese poetry. There are a huge number of Tang poetry and many outstanding poets were born. I have defined 3 user intents for my chatbot.
+         Tang poetry has become the treasure of Chinese traditional literature. So I want to develop a chatbot to introduce famous Tang poetry and poets to foreign friends who want to understand Chinese traditional culture. Tang Dynasty is a golden age for the development of Chinese poetry. There are a huge number of Tang poetry and many outstanding poets were born. I have defined 3 user intents for my chatbot.
 		<b>Famous Poetry:</b>Introduce the 50 most famous Tang poems.
 		<b>Famous Poet:</b>Introduce five most famous poets and their representative works.
 		<b>Season Poetry:</b> Appreciate the beauty of the four seasons in Tang poetry.
 		
 		<label style="font-size:24px;"><b>Design</b></label>
-        This is a task-oriented text-based chatbot, I use a very popular structure which is decomposed into three major Components: Language Understanding, Dialogue Management, Response Generation. Scope the components clearly, so I can focus on each components task.
+        This is text-based chatbot, I use a very popular structure which is decomposed into three major Components: Language Understanding, Dialogue Management, Response Generation. Scope the components clearly, so I can focus on each components task.
 	    <img src="images/chatdesign.jpg" alt="chatdesign JPG" title=" ChatBot Design "/>
 		<b>Language Understanding:</b>Count keywords to identify user intent, required information and optional information. Extract needed information from the user message and put the extracted information to the Hash Table.
 	    <b>Dialogue Management:</b>Based on value extracted from the hash table to decide what should I ask for the missing information or what should I answer.
@@ -78,16 +78,16 @@
 	   <!-- set ID for css style -->
       <pre id="story_block3">
 	    <label style="font-size:24px;"><b>Task</b></label>
-         Creating web service and web application that will allow people to rent and share powered skateboards in State College! We may assume that each user in the system can only have one reservation at a time. The application can perform the following tasks:
+         Creating web service and web application that allows people to rent and share powered skateboards in State College! We may assume that each user in the system can only have one reservation at a time. The application can perform the following tasks:
         <b>1.Add a username</b> to the system.
         <b>2.Retrieve</b> the reservation info.
         <b>3.Get a list of reservations</b> for all users.
-		<b>4.create a reservation</b> for a given user. It should specify username, start date, start time, and number of hours.
+		<b>4.Create a reservation</b> for a given user. It should specify username, start date, start time, and number of hours.
         <b>5.Update a reservation</b> for a given user. It should specify username, start date, start time, and number of hours.</li>
         <b>6.Delete a reservation</b> for a given user.
        
 		<label style="font-size:24px;"><b>Design</b></label>
-		 RESTful web services are built to work best on the Web. We design API by creating a list of RESTful URLs. Implement RESTful API using Node.js and Express.js.
+		 RESTful web services are built to work best on the Web. We design API by creating a list of RESTful URLs. Implement RESTful API relying on Node.js and Express.js.
 		 <b>1.</b>Store data on the server in a JSON file.
          <b>2.</b>The server should return the data in JSON format.
 		 <b>3.</b>The client should extract the data from the JSON response.
